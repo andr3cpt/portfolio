@@ -1,0 +1,62 @@
+.short-bio {
+    margin: 5em 0;
+
+    h2  {
+        margin-bottom: 3rem;
+    }
+}
+
+.skills {
+    margin: 5em 0;
+
+    h2  {
+        margin-bottom: 4rem;
+    }
+
+    .skills-icons-container {
+        width: 400px;
+        min-width: 200px;
+
+        .web-dev-icons,
+        .libraries-icons,
+        .graphics-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+            margin-bottom: 8rem;
+
+            img {
+                height: 40px;
+                width: 60px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 400px) {
+    .skills {
+        .skills-icons-container {
+            .web-dev-icons,
+            .libraries-icons,
+            .graphics-icons {
+                gap: 4rem;
+                img {
+                    height: 60px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .about-homepage {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .short-bio {
+            width: 45%;
+        }
+    }
+}

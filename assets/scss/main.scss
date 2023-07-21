@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+
+/************* Colors **************/
+
+$bg-dark: #121317;
+$bg-darker: #09090b;
+$primary-content: #ece8f5;
+$accent: #3968e1;
+
+/************* Typhography **************/
+
+$main-text: 'Quicksand', sans-serif;
+
+h2 {
+  font-size: 3.5rem;
+  font-family: $main-text;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@mixin lhCrop($line-height) {
+  // Custom mixin to crop default white space in text
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+}
+
+/************* Imported stylesheets **************/
+
+@import "./header";
+@import "./hero";
+@import "./buttons";
+@import "./projects";
+@import "./card";
+@import "./about-homepage";
+@import "./footer";
+@import "./contact-form";
+@import "./about";
+@import "./project-page";
+@import "./message-response";
+
+/************* General styles **************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-dark;
+  color: $primary-content;
+  font-family: $main-text;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  &:hover {
+    color: $accent;
+    transition: 200ms;
+  }
+}
+
+.go-home {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.title-border {
+  height: 1;
+  width: 20px;
+  max-width: 20px;
+  margin-right: 24px;
+  background-color: $accent;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}

@@ -4,7 +4,7 @@ Welcome to the first version of my personal portfolio!
 I’m an aspiring web developer who has a design background.
 My website is simple, with a sleek, modern minimalistic look. I use it to showcase some of my best design projects, and I plan to use it to host my future WebDev endeavors.
 
-
+https://andr3cpt.github.io/portfolio/
 
 ### Tech stack
 
